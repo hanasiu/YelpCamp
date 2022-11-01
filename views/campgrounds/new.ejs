@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-6 offset-3">
             <h1 class="center-text">New Campground</h1>
-            <form action="/campgrounds" method="POST" novalidate class="validated-form">
+            <form action="/campgrounds" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
                     <input type="text" id="title" name="campground[title]" class="form-control"  required>
@@ -17,13 +17,13 @@
                         Looks Good!
                     </div>
                 </div>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label for="image" class="form-label">Image Url</label>
                     <input type="text" id="image" name="campground[image]" class="form-control" required>
                     <div class="valid-feedback">
                         Looks Good!
                     </div>
-                </div>
+                </div> -->
                 <div class="mb-3">
                 <label for="price" class="form-label">Campground Price</label>    
                 <div class="input-group">
@@ -45,6 +45,16 @@
                 <div class="valid-feedback">
                     Looks Good!
                 </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Upload Images</label>
+                    <div class="form-file custom-file">
+                          <input class="form-control custom-file-input" type="file" id="image" name="image" multiple onchange="previewMultiple(event)">
+                          <label for="image" class="form-label custom-file-label"></label>
+                      </div>
+                      <div id="formFile"></div>
+                  </div>   
+                  
                 <div class="mb-3">
                     <button class="btn btn-success">Add Campground</button>
                 </div>
