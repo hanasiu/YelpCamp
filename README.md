@@ -4,4 +4,6 @@ To make YelpCamp excute, 'npm init -y' and 'npm i express mongoose ejs method-ov
 
 'mongod' needed on shell.
 
+'.env' file empty because it is secret key.
+
 https://github.com/Colt/YelpCamp
