@@ -12,4 +12,4 @@ This app excuted by heroku.
 
 here:
 
-https://secret-citadel-52227.herokuapp.com/campgrounds/636f49816814403dc2dca34b
+https://secret-citadel-52227.herokuapp.com/
